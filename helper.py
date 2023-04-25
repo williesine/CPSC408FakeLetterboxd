@@ -6,7 +6,7 @@ class helper():
     def convert(value):
         types = [int,float,str] # order needs to be this way
         if value == '':
-            return None
+            return None 
         for t in types:
             try:
                 return t(value)
