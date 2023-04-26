@@ -20,6 +20,13 @@ async def on_ready():
 async def on_message(message):
     channel = client.get_channel(1098666455215652877)
     if (message.content.startswith("!popcorn")):
-        await channel.send('hello')
+        await channel.send('hello!')
+        if (message.content == "!popcorn help"):
+            await channel.send('''
+            **Help Menu:**
+            Option 1
+            Option 2
+            Option 3
+            ''')
 
 client.run(TOKEN)
