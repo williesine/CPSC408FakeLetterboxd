@@ -7,11 +7,10 @@ class db_operations():
         # SET THIS PASSWORD BACK TO cpsc408 WHEN YOU'RE DONE
         self.connection = mysql.connector.connect(host="localhost",
             user="root",
-            password="Mustang21!",
+            password="cpsc408",
             auth_plugin='msql_native_password',
             database="letterboxd")
         self.cursor = self.connection.cursor()
-        print(self.connection)
 
      # function to return a single value from table
     def single_record(self,query):
